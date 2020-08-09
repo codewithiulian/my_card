@@ -11,25 +11,34 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Row(
-            // This property aligns the items vertically.
-            // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            // This property aligns the items horizontally, relative to each
-            // other if they have different widths.
-            crossAxisAlignment: CrossAxisAlignment.stretch,
+            // Horizontal alignment.
+            // crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
               Container(
-                color: Colors.white,
-                child: Text('Container 1')
+                color: Colors.red,
+                width: 100.0
               ),
-              SizedBox(width: 20.0,),
+              Column(
+                // Vertical alignment.
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Container(
+                    color: Colors.yellow,
+                    width: 100.0,
+                    height: 100.0,
+                  ),
+                  Container(
+                    color: Colors.green,
+                    width: 100.0,
+                    height: 100.0,
+                  )
+                ],
+              ),
               Container(
-                  color: Colors.blue,
-                  child: Text('Container 2')
-              ),
-              Container(
-                  color: Colors.red,
-                  child: Text('Container 3')
-              ),
+                color: Colors.blue,
+                width: 100.0
+              )
             ],
           ),
         ),
