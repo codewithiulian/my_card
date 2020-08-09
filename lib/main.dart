@@ -11,34 +11,17 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Row(
-            // Horizontal alignment.
-            // crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Container(
-                color: Colors.red,
-                width: 100.0
-              ),
               Column(
-                // Vertical alignment.
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  Container(
-                    color: Colors.yellow,
-                    width: 100.0,
-                    height: 100.0,
+                  CircleAvatar(
+                    radius: 50.0,
+                    backgroundImage: AssetImage('images/profile.jpeg'),
                   ),
-                  Container(
-                    color: Colors.green,
-                    width: 100.0,
-                    height: 100.0,
-                  )
                 ],
               ),
-              Container(
-                color: Colors.blue,
-                width: 100.0
-              )
             ],
           ),
         ),
