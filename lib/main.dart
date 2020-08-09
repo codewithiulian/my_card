@@ -20,6 +20,19 @@ class MyApp extends StatelessWidget {
                     radius: 50.0,
                     backgroundImage: AssetImage('images/profile.jpeg'),
                   ),
+                  Text(
+                    'Iulian Oana',
+                    style: TextStyle(
+                      fontSize: 40.0,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'Sriracha'
+                    ),
+                  ),
+                  Container(
+                    height: 10.0,
+                    color: Colors.white,
+                  ),
                 ],
               ),
             ],
