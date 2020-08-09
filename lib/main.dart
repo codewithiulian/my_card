@@ -29,9 +29,14 @@ class MyApp extends StatelessWidget {
                       fontFamily: 'Sriracha'
                     ),
                   ),
-                  Container(
-                    height: 10.0,
-                    color: Colors.white,
+                  Text(
+                    'SOFTWARE DEVELOPER',
+                    style: TextStyle(
+                      color: Colors.teal.shade100,
+                      fontFamily: 'Source Sans Pro',
+                      letterSpacing: 2.5,
+                      fontWeight: FontWeight.bold
+                    ),
                   ),
                 ],
               ),

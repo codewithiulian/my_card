@@ -39,5 +39,6 @@ flutter:
     - family: Sriracha
       fonts:
         - asset: fonts/Sriracha-Regular.ttf
-#        - asset: fonts/Sriracha-Regular.ttf
-#          style: italic
+    - family: Source Sans Pro
+      fonts:
+        - asset: fonts/SourceSansPro-Regular.ttf
