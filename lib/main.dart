@@ -10,79 +10,51 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+          child: Column(
             children: <Widget>[
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  CircleAvatar(
-                    radius: 50.0,
-                    backgroundImage: AssetImage('images/profile.jpeg'),
-                  ),
-                  Text(
-                    'Iulian Oana',
-                    style: TextStyle(
-                      fontSize: 40.0,
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: 'Sriracha'
-                    ),
-                  ),
-                  Text(
-                    'SOFTWARE DEVELOPER',
-                    style: TextStyle(
-                      color: Colors.teal.shade100,
-                      fontFamily: 'Source Sans Pro',
-                      letterSpacing: 2.5,
-                      fontWeight: FontWeight.bold
-                    ),
-                  ),
-                  Container(
+              CircleAvatar(
+                backgroundImage: AssetImage('images/profile.jpeg'),
+                radius: 50.0
+              ),
+              Text(
+                'Iulian Oana',
+                style: TextStyle(
                     color: Colors.white,
-                    margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                    padding: EdgeInsets.all(10.0),
-                    child: Row(
-                      children: <Widget>[
-                        Icon(
-                          Icons.phone,
-                          color: Colors.teal.shade900,
-                        ),
-                        SizedBox(width: 10.0),
-                        Text(
-                          '+44 123 456 789',
-                          style: TextStyle(
-                            color: Colors.teal.shade900,
-                            fontSize: 20.0,
-                            fontFamily: 'Source Sans Pro',
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Container(
+                    fontSize: 30.0,
+                    fontFamily: 'Sriracha'
+                ),
+              ),
+              Text(
+                'SOFTWARE DEVELOPER',
+                style: TextStyle(
                     color: Colors.white,
-                    margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                    padding: EdgeInsets.all(10.0),
-                    child: Row(
-                      children: <Widget>[
-                        Icon(
-                          Icons.email,
-                          color: Colors.teal.shade900,
-                        ),
-                        SizedBox(width: 10.0),
-                        Text(
-                          'iulian.andreioana@gmail.com',
-                          style: TextStyle(
-                            color: Colors.teal.shade900,
-                            fontSize: 20.0,
-                            fontFamily: 'Source Sans Pro',
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
+                    fontSize: 20.0,
+                    fontFamily: 'Source Sans Pro'
+                ),
+              ),
+              Container(
+                color: Colors.white,
+                padding: EdgeInsets.all(10.0),
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: Row(
+                  children: <Widget>[
+                    Icon(Icons.phone, color: Colors.teal.shade900,),
+                    SizedBox(width: 10.0),
+                    Text('+44 1234 567 890'),
+                  ],
+                ),
+              ),
+              Container(
+                color: Colors.white,
+                padding: EdgeInsets.all(10.0),
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: Row(
+                  children: <Widget>[
+                    Icon(Icons.email, color: Colors.teal.shade900,),
+                    SizedBox(width: 10.0),
+                    Text('iulian.andreioana@gmail.com'),
+                  ],
+                ),
               ),
             ],
           ),
